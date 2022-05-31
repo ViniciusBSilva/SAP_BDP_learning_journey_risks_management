@@ -22,7 +22,7 @@ module.exports = cds.service.impl(async function () {
             } else {
                 risk.criticality = 2;
             }
-
+ 
         });
 
     });
