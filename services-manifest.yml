@@ -9,4 +9,4 @@ create-services:
 # ------------------------------------------------------------
   - name:   risk-management-xsuaa
     broker: xsuaa
-    plan: application
+    plan: "broker"
