@@ -17,12 +17,13 @@ module.exports = cds.service.impl(async function () {
         const risks = Array.isArray(data) ? data : [data];
         risks.forEach((risk) => {
 
-            if (risk.impact >= 100000) {
-                risk.criticality = 1;
-            } else {
-                risk.criticality = 2;
+            if (risk) {
+                if (risk.impact >= 100000) {
+                    risk.criticality = 1;
+                } else {
+                    risk.criticality = 2;
+                }
             }
-
         });
 
     });
