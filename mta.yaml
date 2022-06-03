@@ -76,3 +76,4 @@ resources:
    parameters:
      service: destination
      service-plan: lite
+
